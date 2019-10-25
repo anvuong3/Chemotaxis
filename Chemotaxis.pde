@@ -13,7 +13,7 @@
  		colony[i] = new Bacteria();
  	}
  	background(0);
- 	noLoop();
+
 
  }   
  void draw()   
@@ -28,10 +28,21 @@
  }  
  class Bacteria    
  {     
- 	//lots of java!   
+ 	//lots of java!  
+ 	int myX, myY;
+
+ 	Bacteria(int x, int y){
+ 		myX = x;
+ 		myY = y;
+ 	}
 
  	void show(){
- 		Slime(x, y);
+ 		Slime(myX, myY);
+ 	}
+ 	void move(){
+ 		if(mouseX > myX){
+ 			
+ 		}
  	}
  }   
 void Slime(int x, int y){
